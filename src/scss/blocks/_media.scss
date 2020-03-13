@@ -1,0 +1,217 @@
+@media (max-width: 991px) {
+    .container {
+        max-width: 755px;
+    }
+    .adv {
+        &__point {
+            &_text {
+                
+                font-size: 13px;
+            }
+        }
+    }
+    .carousel {
+        &__inner {
+            img {
+                width: 600px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        &__logo {
+            width: 225px;
+        }
+        &__official {
+            font-size: 11px;
+            span {
+                font-size: 17px;
+            }
+        }
+        &__tel {
+            font-size: 16px;
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 39px;
+        }
+        &__subheader {
+            font-size: 22px;
+        }
+        &__icon {
+            font-size: 13px;
+        }
+    }
+    .adv {
+        .row {
+            margin-top: 10px;
+        }
+        &__point {
+            width: 190px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 400px;
+            img {
+                width: 400px;
+            }
+        }
+        .slick-dots {
+            width: 400px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .button {
+        width: 100%;
+        &_main {
+            height: 40px;
+            width: 200px;
+            font-size: 13px;
+        }
+    }
+    .header {
+        .button {
+            width: 80%;
+            font-size: 7px;
+        }
+        &__logo {
+            width: 130px;
+        }
+        &__official {
+            font-size: 6px;
+            span {
+                font-size: 9px;
+            }
+        }
+        &__tel {
+            font-size: 11px;
+        }
+    }
+    .promo {
+        padding: 21px 0 50px 0;
+        &__header {
+            font-size: 18px;
+        }
+        &__subheader {
+            font-size: 15px;
+        }
+        &__icons {
+            width: 340px;
+        }
+        &__icon {
+            font-size: 14px;
+        }
+    }
+    .adv {
+        padding: 35px 0 25px 0;
+        &__point {
+            width: 155px;
+            &_header {
+                margin-top: 12px;
+                font-size: 13px;
+            }
+            &__text {
+                margin-top: 8px;
+                font-size: 11px;
+            }
+        }
+    }
+    .consultation {
+        padding: 60px 0 45px 0;
+        .title_left {
+            font-size: 18px;
+        }
+        &__descr {
+            font-size: 14px;
+            margin-top: 40px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 230px;
+            img {
+                width: 230px;
+            }
+        }
+        .slick-dots {
+            width: 230px;
+            
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .button_submit {
+        font-size: 14px;
+    } 
+    .header {
+        &__logo {
+            width: 150px;
+        }
+        &__official {
+            display: none;
+        }
+        &__tel {
+            font-size: 14px;
+        }
+    }
+    .promo {
+        min-height: 550px;
+        &__wrapper {
+            margin-top: 40px;
+        }
+        &__header {
+            font-size: 19px;
+        }
+        &__subheader {
+            font-size: 12px;
+        }
+        &__icons {
+            width: 290px;
+        }
+        &__icon {
+            font-size: 12px;
+        }
+        &__link {
+            font-size: 13px;
+        }
+    }
+    .adv {
+        min-height: 400px;
+        &__header {
+            font-size: 22px;
+        }
+        &__point {
+            width: 105px;
+            &_text {
+                font-size: 8px;
+                margin-top: 2px;
+            }
+        }
+
+    }
+    .consultation {
+        padding: 40px 0;
+        min-height: 480px;
+        .title_left {
+            font-size: 13px;
+        }
+        &__descr {
+            font-size: 12px;
+            margin-top: 25px;
+        }
+        .feed-form {
+            margin-top: 25px;
+            width: 215px;
+        }
+    }
+
+}
