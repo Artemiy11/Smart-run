@@ -5,7 +5,7 @@
         width: 750px;
         margin: 0 auto;
     }
-    .slick-prev, .slick-next {
+    .prev, .next {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -17,17 +17,36 @@
             height: 50px;
         }
     }
-    .slick-next {
+    .next {
         right: -66px;
         left: auto;
     }
-    .slick-dots {
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .tns-nav {
+        .tns-nav-active {
+            background-color: black;
+        }
+        width: 500px;
+        margin: 0 auto;
         display: flex;
-        padding: 0;
         justify-content: space-between;
-        li {
-            display: inline-block;
-            list-style-type: none;
-           }
+        button {
+            display: none;
+            width: 45px;
+            height: 45px;
+            background-color: $main-color;
+            border: none;
+            border-radius: 100%;
+        }
+    }
+    .tns-outer {
+        button {
+            display: none;
+        }
     }
 }
