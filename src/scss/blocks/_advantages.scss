@@ -8,6 +8,33 @@
         font-size: 30px;
         font-weight: 700;
     }
+    &__animated {
+        &_heart {
+            &:hover {
+                animation-name: heartbeat;
+                animation-duration: 1.5s;
+                animation-timing-function: ease;
+                animation-iteration-count: infinite;
+            }
+        }
+        &_shoe {
+            &:hover {
+                animation-name: shoe;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+            }
+        }
+        &_cup {
+            &:hover {
+                animation-name: cup;
+                animation-duration: 1.5s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+        
+    
     .row {
         display: flex;
         

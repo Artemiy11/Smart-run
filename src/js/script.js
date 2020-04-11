@@ -53,6 +53,72 @@ $(document).ready(function(){
         });
     });
 
-    $('.feed-form').validate(); // должна появиться надпись, но ее нет
+    // masked form
+    $('input[name=phone]').mask("+ 7 (999) 999-9999");
 
+    // pageup
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 900) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href=#up]").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+});
+
+    function valideForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2,
+                },
+                email: {
+                  required: true,
+                  email: true
+                },
+                phone: "required",
+              },
+            messages: {
+                name: {
+                  required: "Пожалуйста, ввидите своё имя",
+                  minlength: jQuery.validator.format("Введите больше {0} символов!")
+                },
+                email: {
+                    required: "Пожалуйста, ввидите свою почту",
+                    email: "Неправильно введён адрес почты"
+                  },
+                phone: {
+                    required: "Пожалуйста, ввидите свой телефон",
+                  }
+              }
+        });
+    }
+
+    valideForms('#order form');
+    valideForms('#consultation-form');
+    valideForms('#consultation form');
+
+    $("form").submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('#thanks, .overlay').fadeIn('slow');
+            $("form").trigger("reset");
+        });
+        return false;
+    });
+
+    // init WOW
+    new WOW().init();
 });

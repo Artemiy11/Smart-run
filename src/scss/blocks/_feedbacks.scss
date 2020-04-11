@@ -1,0 +1,35 @@
+.feedbacks {
+    padding-bottom: 70px;
+    .row {
+        margin: 0 10px 0 10px;
+        margin-top: 70px;
+    }
+    &__feedback {
+        display: inline-flex;
+        margin-bottom: 100px;
+    }
+    &__img {
+        width: 169px;
+        height: 169px;
+    }
+    &__inf {
+        margin-left: 60px;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 700;
+        color: #0d0d0d;
+        margin-bottom: 5px;
+    }
+    &__maraphones {
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+    &__text {
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
