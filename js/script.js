@@ -86,15 +86,15 @@ $(document).ready(function(){
               },
             messages: {
                 name: {
-                  required: "Пожалуйста, ввидите своё имя",
-                  minlength: jQuery.validator.format("Введите больше {0} символов!")
+                  required: "Please, enter your name",
+                  minlength: jQuery.validator.format("Enter more than {0} symbols!")
                 },
                 email: {
-                    required: "Пожалуйста, ввидите свою почту",
-                    email: "Неправильно введён адрес почты"
+                    required: "Please, enter your email",
+                    email: "The email address is entered incorrectly"
                   },
                 phone: {
-                    required: "Пожалуйста, ввидите свой телефон",
+                    required: "Please, enter your phone",
                   }
               }
         });
